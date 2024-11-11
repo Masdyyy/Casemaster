@@ -30,6 +30,7 @@ const Sidebar = () => {
   const [dropdownState, setDropdownState] = useState({
     logbook: false,
     mails: false,
+    attachments: false,
   });
   const navigate = useNavigate();
   const location = useLocation();
@@ -69,7 +70,7 @@ const Sidebar = () => {
     {
       title: "Attachments",
       icon: <AttachmentOutlinedIcon />,
-      path: "/AllAttachments",
+      path: "/all-attachments",
       element: <AllAttachments />,
       hasDropdown: true,
       dropdownKey: "attachments",
@@ -150,7 +151,7 @@ const Sidebar = () => {
   return (
     <div
       className={`${
-        open ? "w-[270px]" : "w-[80px]"
+        open ? "w-[16.875rem]" : "w-[6.438rem]"
       } primary-color h-screen p-5 pt-8 duration-300 relative flex flex-col`}
     >
       <div
