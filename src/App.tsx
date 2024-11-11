@@ -8,9 +8,12 @@ import Inbox from "./pages/Mails/Inbox";
 import Starred from "./pages/Mails/Starred";
 import Sent from "./pages/Mails/Sent";
 import Archive from "./pages/Mails/Archive";
-import Attachments from "./pages/Attachment";
 import CaseTracker from "./pages/CaseTracker";
 import Task from "./pages/Task";
+import AllAttachments from "./pages/Attachments/AllAttachments";
+import MyAttachments from "./pages/Attachments/MyAttachments";
+import ArchiveAttachments from "./pages/Attachments/Archive";
+import SharedWithMe from "./pages/Attachments/SharedWithMe";
 import "./App.css";
 
 const App = () => {
@@ -31,7 +34,13 @@ const App = () => {
             <Route path="/starred" element={<Starred />} />
             <Route path="/sent" element={<Sent />} />
             <Route path="/archive" element={<Archive />} />
-            <Route path="/attachments" element={<Attachments />} />
+            <Route path="/all-attachments" element={<AllAttachments />} />
+            <Route path="/my-attachments" element={<MyAttachments />} />
+            <Route
+              path="/archive-attachments"
+              element={<ArchiveAttachments />}
+            />
+            <Route path="/shared-with-me" element={<SharedWithMe />} />
             <Route path="/case-tracker" element={<CaseTracker />} />
             <Route path="/task" element={<Task />} />
           </Routes>

@@ -15,9 +15,13 @@ import Inbox from "../pages/Mails/Inbox";
 import Starred from "../pages/Mails/Starred";
 import Sent from "../pages/Mails/Sent";
 import Archive from "../pages/Mails/Archive";
-import Attachments from "../pages/Attachment";
+import Attachments from "../pages/Attachments/AllAttachments";
 import CaseTracker from "../pages/CaseTracker";
 import Task from "../pages/Task";
+import AllAttachments from "../pages/Attachments/AllAttachments";
+import MyAttachments from "../pages/Attachments/MyAttachments";
+import ArchiveAttachments from "../pages/Attachments/Archive";
+import SharedWithMe from "../pages/Attachments/SharedWithMe";
 import "./Sidebar.css";
 
 const Sidebar = () => {
@@ -64,8 +68,32 @@ const Sidebar = () => {
     {
       title: "Attachments",
       icon: <AttachmentOutlinedIcon />,
-      path: "/attachments",
-      element: <Attachments />,
+      path: "/AllAttachments",
+      element: <AllAttachments />,
+      hasDropdown: true,
+      dropdownKey: "attachments",
+      dropdownItems: [
+        {
+          title: "All Attachments",
+          path: "/all-attachments",
+          element: <AllAttachments />,
+        },
+        {
+          title: "My Attachments",
+          path: "/my-attachments",
+          element: <MyAttachments />,
+        },
+        {
+          title: "Shared With Me",
+          path: "/shared-with-me",
+          element: <SharedWithMe />,
+        },
+        {
+          title: "Archive",
+          path: "/archive-attachments",
+          element: <ArchiveAttachments />,
+        },
+      ],
     },
     {
       title: "Case Tracker",
