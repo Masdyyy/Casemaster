@@ -155,7 +155,7 @@ const Sidebar = () => {
       } primary-color h-screen p-5 pt-8 duration-300 relative flex flex-col`}
     >
       <div
-        className="absolute cursor-pointer -right-3 top-9 w-7 h-7 flex items-center justify-center border-dark-purple border-2 rounded-full bg-white"
+        className="absolute cursor-pointer -right-3 top-8 w-6 h-6 flex items-center justify-center border-dark-purple p-4 border-2 rounded-full bg-white"
         onClick={() => setOpen(!open)}
       >
         <ArrowBackIosNewOutlinedIcon
