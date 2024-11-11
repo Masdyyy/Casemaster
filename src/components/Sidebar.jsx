@@ -236,7 +236,7 @@ const Sidebar = () => {
                     onClick={() =>
                       handleNavigation(dropdownItem.path, false, null, true)
                     }
-                    className={`text-white text-sm flex items-center gap-x-4 p-2 rounded-md cursor-pointer hover:bg-[#0B1730] ${
+                    className={`text-white text-sm flex items-center gap-x-4 py-2 px-4 rounded-md cursor-pointer hover:bg-[#0B1730] ${
                       dropdownItem.path === activeMenu ? "bg-[#0C1A37]" : ""
                     }`}
                   >
