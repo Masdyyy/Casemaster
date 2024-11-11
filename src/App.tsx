@@ -10,6 +10,7 @@ import Sent from "./pages/Mails/Sent";
 import Archive from "./pages/Mails/Archive";
 import Attachments from "./pages/Attachment";
 import CaseTracker from "./pages/CaseTracker";
+import Task from "./pages/Task";
 import "./App.css";
 
 const App = () => {
@@ -32,6 +33,7 @@ const App = () => {
             <Route path="/archive" element={<Archive />} />
             <Route path="/attachments" element={<Attachments />} />
             <Route path="/case-tracker" element={<CaseTracker />} />
+            <Route path="/task" element={<Task />} />
           </Routes>
         </div>
       </div>

@@ -6,6 +6,7 @@ import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
 import AttachmentOutlinedIcon from "@mui/icons-material/AttachmentOutlined";
 import TableChartOutlinedIcon from "@mui/icons-material/TableChartOutlined";
 import ArrowBackIosNewOutlinedIcon from "@mui/icons-material/ArrowBackIosNewOutlined";
+import AssignmentOutlinedIcon from "@mui/icons-material/AssignmentOutlined";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import ExpandLessIcon from "@mui/icons-material/ExpandLess";
 import FromEmail from "../pages/Logbook/FromEmail";
@@ -16,6 +17,7 @@ import Sent from "../pages/Mails/Sent";
 import Archive from "../pages/Mails/Archive";
 import Attachments from "../pages/Attachment";
 import CaseTracker from "../pages/CaseTracker";
+import Task from "../pages/Task";
 import "./Sidebar.css";
 
 const Sidebar = () => {
@@ -70,6 +72,12 @@ const Sidebar = () => {
       icon: <TableChartOutlinedIcon />,
       path: "/case-tracker",
       element: <CaseTracker />,
+    },
+    {
+      title: "Task",
+      icon: <AssignmentOutlinedIcon />,
+      path: "/task",
+      element: <Task />,
     },
   ];
 
@@ -205,6 +213,11 @@ const Sidebar = () => {
           </div>
         ))}
       </ul>
+
+      {/* Bottom Section */}
+      <div className="border-t flex p-3">
+        <img src="" alt="" />
+      </div>
     </div>
   );
 };
