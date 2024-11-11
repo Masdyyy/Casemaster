@@ -14,7 +14,7 @@ import AllAttachments from "./pages/Attachments/AllAttachments";
 import MyAttachments from "./pages/Attachments/MyAttachments";
 import ArchiveAttachments from "./pages/Attachments/Archive";
 import SharedWithMe from "./pages/Attachments/SharedWithMe";
-import StarredAttachments from "./pages/Attachments/StarredAttachments";
+import StarredAttachments from "./pages/Attachments/Starred";
 
 import "./App.css";
 
