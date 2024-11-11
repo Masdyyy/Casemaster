@@ -14,6 +14,8 @@ import AllAttachments from "./pages/Attachments/AllAttachments";
 import MyAttachments from "./pages/Attachments/MyAttachments";
 import ArchiveAttachments from "./pages/Attachments/Archive";
 import SharedWithMe from "./pages/Attachments/SharedWithMe";
+import StarredAttachments from "./pages/Attachments/StarredAttachments";
+
 import "./App.css";
 
 const App = () => {
@@ -41,6 +43,10 @@ const App = () => {
               element={<ArchiveAttachments />}
             />
             <Route path="/shared-with-me" element={<SharedWithMe />} />
+            <Route
+              path="/starred-attachments"
+              element={<StarredAttachments />}
+            />
             <Route path="/case-tracker" element={<CaseTracker />} />
             <Route path="/task" element={<Task />} />
           </Routes>
