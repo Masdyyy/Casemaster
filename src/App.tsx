@@ -15,6 +15,8 @@ import MyAttachments from "./pages/Attachments/MyAttachments";
 import ArchiveAttachments from "./pages/Attachments/Archive";
 import SharedWithMe from "./pages/Attachments/SharedWithMe";
 import StarredAttachments from "./pages/Attachments/Starred";
+import Settings from "./pages/Settings/Settings";
+import tableData from "./pages/Logbook/TableData.json";
 
 import "./App.css";
 
@@ -49,6 +51,7 @@ const App = () => {
             />
             <Route path="/case-tracker" element={<CaseTracker />} />
             <Route path="/task" element={<Task />} />
+            <Route path="/settings" element={<Settings />}></Route>
           </Routes>
         </div>
       </div>
