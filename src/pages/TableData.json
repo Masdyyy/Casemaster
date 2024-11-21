@@ -1,0 +1,26 @@
+{
+    "columns": [
+      { "header": "Case No.", "key": "case-no" },
+      { "header": "Title", "key": "title" },
+      { "header": "Incident", "key": "incident" },
+      { "header": "Date SFD", "key": "date-sfd" },
+      { "header": "Date Order", "key": "date-order" },
+      { "header": "Status", "key": "status" },
+      { "header": "Deadline", "key": "deadline" },
+      { "header": "Notes", "key": "notes" }
+    ],
+    "data": [
+      {
+        "case-no": "13-73060",
+        "title": "IDA v. QUE BOK KUN",
+        "incident": "Declaration of Nullity of NCT",
+        "date-sfd": "November 14, 2024",
+        "date-order": "November 14, 2024",
+        "status": "New",
+        "deadline": "November 30, 2024",
+        "notes": "NULL"
+      }
+     
+    ]
+  }
+  
